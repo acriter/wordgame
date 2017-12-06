@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2560F51FD810190059588B /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2560F31FD810190059588B /* LetterViewController.swift */; };
+		CF2560F61FD810190059588B /* LetterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2560F41FD810190059588B /* LetterViewController.xib */; };
+		CF2560F81FD8108C0059588B /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2560F71FD8108C0059588B /* LetterView.swift */; };
+		CF2560FA1FD817AF0059588B /* LetterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2560F91FD817AF0059588B /* LetterView.xib */; };
 		CFD729101FD69410003A9D65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7290F1FD69410003A9D65 /* AppDelegate.swift */; };
 		CFD729121FD69410003A9D65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD729111FD69410003A9D65 /* ViewController.swift */; };
 		CFD729151FD69410003A9D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD729131FD69410003A9D65 /* Main.storyboard */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF2560F31FD810190059588B /* LetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
+		CF2560F41FD810190059588B /* LetterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LetterViewController.xib; sourceTree = "<group>"; };
+		CF2560F71FD8108C0059588B /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		CF2560F91FD817AF0059588B /* LetterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LetterView.xib; sourceTree = "<group>"; };
 		CFD7290C1FD69410003A9D65 /* WordGameOnlyUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordGameOnlyUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD7290F1FD69410003A9D65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFD729111FD69410003A9D65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +142,8 @@
 		CFD729301FD6942C003A9D65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF2560F71FD8108C0059588B /* LetterView.swift */,
+				CF2560F91FD817AF0059588B /* LetterView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +156,8 @@
 				CFD7293E1FD694D1003A9D65 /* GameViewController.swift */,
 				CFD7293F1FD694D1003A9D65 /* GameViewController.xib */,
 				CFD729111FD69410003A9D65 /* ViewController.swift */,
+				CF2560F31FD810190059588B /* LetterViewController.swift */,
+				CF2560F41FD810190059588B /* LetterViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +245,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2560F61FD810190059588B /* LetterViewController.xib in Resources */,
+				CF2560FA1FD817AF0059588B /* LetterView.xib in Resources */,
 				CFD729411FD694D1003A9D65 /* GameViewController.xib in Resources */,
 				CFD7291A1FD69410003A9D65 /* LaunchScreen.storyboard in Resources */,
 				CFD729171FD69410003A9D65 /* Assets.xcassets in Resources */,
@@ -264,6 +278,8 @@
 				CFD7293C1FD69459003A9D65 /* ShapeBank.swift in Sources */,
 				CFD729101FD69410003A9D65 /* AppDelegate.swift in Sources */,
 				CFD729441FD6968C003A9D65 /* BankViewController.swift in Sources */,
+				CF2560F51FD810190059588B /* LetterViewController.swift in Sources */,
+				CF2560F81FD8108C0059588B /* LetterView.swift in Sources */,
 				CFD729391FD69459003A9D65 /* Letter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

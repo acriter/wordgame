@@ -11,18 +11,16 @@ import UIKit
 class GameViewController: UIViewController {
     
     @IBOutlet weak var bankView: UIView!
+    @IBOutlet weak var lettersView: UIView!
     
     var levelInfo: Level
     var bankViewController: BankViewController?
+    var letterViewControllers: [LetterViewController]?
     
     init(levelInfo: Level) {
         self.levelInfo = levelInfo
         super.init(nibName: "GameViewController", bundle: nil)
     }
-    
-//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-//    }
     
     required init?(coder aDecoder: NSCoder) {
         assertionFailure("should only be initializing this controller with level info")
@@ -32,6 +30,19 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setUpBankViewController()
+        self.setUpLetters()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    private func setUpBankViewController() {
         let bvc = BankViewController(shapeBank: self.levelInfo.bank)
         //bvc.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         bvc.view.frame = self.bankView.bounds
@@ -42,11 +53,10 @@ class GameViewController: UIViewController {
         self.bankViewController? = bvc
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    private func setUpLetters() {
+        self.letterViewControllers = [LetterViewController]()
+        for letter in self.levelInfo.startLetters {
+             
+        }
     }
 }

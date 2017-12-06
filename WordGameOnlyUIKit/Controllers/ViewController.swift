@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: Any) {
         
-        let levelInfo: Level = Level(bank: ShapeBank(startingShapes: [Shape]()), startLetters: [Letter]())
+        let letter : Letter = Letter(startingShapes: [Shape](), startingDisabledPieces: [LetterPiece](), connectedLeft: false, connectedRight: false)
+        let levelInfo: Level = Level(bank: ShapeBank(startingShapes: [Shape]()), startLetters: [letter])
         let gvc : GameViewController = GameViewController(levelInfo: levelInfo)
         self.present(gvc, animated: true, completion: nil)
     }

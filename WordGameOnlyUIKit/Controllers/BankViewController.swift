@@ -18,6 +18,7 @@ class BankViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
+        assertionFailure("should only be initializing this controller with shape information")
         self.shapeBank = ShapeBank(startingShapes: [])
         super.init(coder: aDecoder)
     }
